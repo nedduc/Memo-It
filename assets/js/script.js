@@ -15,26 +15,30 @@ let dateElement = document.getElementById("date");
 let list = document.getElementById("list");
 let input = document.getElementById("input");
 
-//classes names for creating object
+//class names for creating object
 let CHECK = "far-fa-check-circle";
 let UNCHECK = "far-fa-circle";
 let LINE_THROUGH = "lineThrough";
 
-let LIST = [], id = 0;
+let LIST = [],
+    id = 0;
 
 //Show todays date
 let options = {
-    weekday : "short",
-    month : "short",
-    day : "numeric"
+    weekday: "short",
+    month: "short",
+    day: "numeric"
 };
 let today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en", options);
 
 //Add task to-Do function
 function addToDo(toDo, id, done, trash) {
-    if(trash) {return; }
+    if (trash) {
+        return;
+    }
 
+//constant variables
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
 
@@ -43,25 +47,25 @@ function addToDo(toDo, id, done, trash) {
       <p class="text" ${LINE}>${toDo}</p>
       <i class="far fa-trash-alt" job="delete" id=${id}></i>
   </li>`;
-  const position = "beforeend";
-  list.insertAdjacentHTML(position, item);
+    const position = "beforeend";
+    list.insertAdjacentHTML(position, item);
 }
 //Add item to list when user hits enter key number 13 event listener
-document.addEventListener("keyup", function(event) {
-    if(event.keyCode === 13) {
+document.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
         const toDo = input.value;
-//Add item to list if not empty
-if(toDo) {
-    addToDo(toDo);
-    LIST.push ({
-        name : toDo,
-        id : id,
-        done : false,
-        trash : false
-    });
-    id++;
-}
-input.value = "";
+        //Add item to list if not empty
+        if (toDo) {
+            addToDo(toDo);
+            LIST.push({
+                name: toDo,
+                id: id,
+                done: false,
+                trash: false
+            });
+            id++;
+        }
+        input.value = "";
     }
 });
 //Function toggel check and uncheck when circle icon is clicked
@@ -71,23 +75,22 @@ function completeToDo(element) {
     element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
 }
 
-function removeToDo (element){
+function removeToDo(element) {
     element.parentNode.parentNode.removeChild(element.parentNode);
 }
 
 //Add event listener to click function on job completed and to delete
-list.addEventListener("click", function(event) {
+list.addEventListener("click", function (event) {
     const element = event.target;
     const elementJob = element.attributes.job.value;
 
-    if (elementJob == "complete"){
+    if (elementJob == "complete") {
         completeToDo(element);
-    }
-    else if(elementJob == "delete") {
+    } else if (elementJob == "delete") {
         removeToDo(element);
     }
 });
-clear.addEventListener("click", function(){
+clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });

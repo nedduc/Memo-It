@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel='shortcut icon' type='image/x-icon' href="assets/images/myfavicon.png" />
-        <title>To Do List</title>
-    </head>
-    <body>
-       <div class="container1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--google and fontawesome-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel='shortcut icon' type='image/x-icon' href="assets/images/myfavicon.png" />
+    <title>To Do List</title>
+</head>
+
+<body>
+    <!--main container-->
+    <div class="container1">
         <div class="container">
             <div class="header">
                 <h1>Memo-It</h1>
                 <h2 id="greeting"></h2>
                 <div class="erase">
-                    <i class="fas fa-eraser"  aria-hidden="true"></i>
+                    <i class="fas fa-eraser" aria-hidden="true"></i>
                 </div>
                 <div id="date">DATE HERE</div>
             </div>
             <div class="content">
-                <form action="/action_page.php">
                     <ul id="list">
-                  <!--<li class="item">
-                      <i class="far fa-circle" job="complete" id="icons"></i>
-                        <p class="text">Buy bread</p>
-                        <i class="far fa-trash-alt"> job="delete" id="icons"></i>
-                     </li>-->
-                </ul>
-            </form>
+                        <!--main list section -->
+                    </ul>
             </div>
             <div class="add-to-do">
                 &nbsp;<i class="fas fa-pen-nib" aria-hidden="true"></i>&nbsp;&nbsp;
-                <input type="text" id="input" placeholder="Type task and hit enter.." autofocus>
+                <input type="text" id="input" placeholder="Type task and hit enter.." maxlength="33" autofocus>
             </div>
-        </div>     
+        </div>
+        <!--link javascript before closing body tag so page loads quicker-->
         <script src="assets/js/script.js"></script>
     </div>
-    </body>
+</body>
+
 </html>

@@ -1,6 +1,6 @@
 # Memo-It - To do list, Work, Rest & Play
 
-Gone to the fridge and wonder why your standing there, gone to the shops and come back with everything but the item you went in for. Our lives are getting busyier and busyier and sometimes you just need a little extra help. The difference with this little 'To Do List' is that it won't just be in one long list that you have to scroll down to find the item that needs to be done becasue it has been divided into three seperate pages, Work..Rest..&..Play. 
+Gone to the fridge and wonder why your standing there, gone to the shops and come back with everything but the item you went in for. Our lives are getting busier and busyier and sometimes you just need a little extra help. The difference with this little 'To Do List' is that it won't just be in one long list that you have to scroll down to find the item that needs to be done becasue it has been divided into three seperate pages, Work..Rest..&..Play. 
 
 For all the important things you need to remember and do.
 
