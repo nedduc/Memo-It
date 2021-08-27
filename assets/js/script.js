@@ -10,7 +10,7 @@ if (time < 10) {
 }
 document.getElementById("greeting").innerHTML = greeting;
 //create a to do list ref: code explained
-let clear = document.querySelector("erase");
+let clear = document.querySelector(".erase");
 let dateElement = document.getElementById("date");
 let list = document.getElementById("list");
 let input = document.getElementById("input");
