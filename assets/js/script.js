@@ -19,7 +19,7 @@ let input = document.getElementById("input");
 let CHECK = "far-fa-check-circle";
 let UNCHECK = "far-fa-circle";
 let LINE_THROUGH = "lineThrough";
-
+//variables
 let LIST = [],
     id = 0;
 
