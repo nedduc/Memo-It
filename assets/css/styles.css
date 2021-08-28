@@ -2,9 +2,10 @@ body {
     padding: 0;
     margin: 0;
     background-color: rgba(5, 34, 28, 0.4);
+    overflow-x: hidden !important;
 }
 
-/*--styled erase icon--*/
+/*----styled erase icon----*/
 .erase {
     width: 1rem;
     height: 1rem;
@@ -24,7 +25,7 @@ body {
     transform: rotate(30deg);
 }
 
-/*--styled date-*/
+/*----styled date----*/
 #date {
     position: absolute;
     bottom: 8px;
@@ -34,7 +35,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/*--main content--*/
+/*----main content----*/
 .container1 {
     width: 100%;
     height: 100%;
@@ -79,13 +80,13 @@ h2 {
 }
 
 .content {
-    width: 100%;
-    height: 20vh;
+    height: 70vh;
     background-color: #FFF;
-    overflow: auto;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
-/*--scrollbar Ref: W3shools--*/
+/*----scrollbar Ref: W3shools----*/
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -146,7 +147,7 @@ ul li {
     color: rgb(51, 50, 50);
 }
 
-/*--styled added item--*/
+/*----styled added item----*/
 .add-to-do {
     position: relative;
     width: auto;
@@ -172,7 +173,7 @@ ul li {
     padding-left: 12px;
 }
 
-/*--styled font awesome icons--*/
+/*----styled font awesome icons----*/
 .fa-trash-alt::before {
     margin-top: 16px;
     font-size: 1.1rem;
@@ -181,14 +182,32 @@ ul li {
     left: 76vw;
 }
 
+i#undefined.far.fa-trash-alt {
+    margin-top: 10px;
+}
+
 .far-fa-circle::before {
     font-size: 2rem;
-    margin-top: 10px;
     left: 18vw;
 }
 
 .far-fa-check-circle::before {
     color: green;
-    margin-top: 10px;
     font-size: 1rem;
+}
+
+/*----media query for mobile----*/
+@media only screen and (max-width: 375px) {
+    .content {
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+/*----media query for mobile----*/
+@media only screen and (max-width: 320px) {
+    .content {
+        width: 100%;
+        height: 20vh;
+    }
 }

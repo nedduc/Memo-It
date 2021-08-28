@@ -38,7 +38,7 @@ function addToDo(toDo, id, done, trash) {
         return;
     }
 
-//constant variables
+    //constant variables
     const DONE = done ? CHECK : UNCHECK;
     const LINE = done ? LINE_THROUGH : "";
 
@@ -50,6 +50,7 @@ function addToDo(toDo, id, done, trash) {
     const position = "beforeend";
     list.insertAdjacentHTML(position, item);
 }
+
 //Add item to list when user hits enter key number 13 event listener
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
@@ -83,7 +84,7 @@ function removeToDo(element) {
 list.addEventListener("click", function (event) {
     const element = event.target;
     const elementJob = element.attributes.job.value;
-// int value; // this variable temporarily unused
+    // int value; // this variable temporarily unused
 
     if (elementJob == "complete") {
         completeToDo(element);
