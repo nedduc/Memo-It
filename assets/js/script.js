@@ -83,6 +83,7 @@ function removeToDo(element) {
 list.addEventListener("click", function (event) {
     const element = event.target;
     const elementJob = element.attributes.job.value;
+// int value; // this variable temporarily unused
 
     if (elementJob == "complete") {
         completeToDo(element);
