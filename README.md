@@ -2,7 +2,7 @@
 
 You have gone to the fridge and wonder why you stood there, you have gone to the stores and come back with everything but the thing you were looking for. Life is busy, and sometimes you need that little extra hint. The Memo-It will keep everything organized.  The Memo-It will keep all them little but important things to remember. Bring attention to the things you need to do, remember them and complete them. I find when you make a list, you are more inclined to take action and complete the task. Brief and to the point. This can be used by everyone. 
 
-Github link (https://nedduc.github.io/Memo-It/)
+The live link can be found here - https://nedduc.github.io/Memo-It/
 
 ![How site would look](assets/images/readme/amiresponsive.png)
 
@@ -24,7 +24,7 @@ Github link (https://nedduc.github.io/Memo-It/)
 
 - __Erase icon__
 
-  - Top right hand side, icon of eraser can be clicked to erase entire page.
+  - Top right hand side, icon of eraser can be clicked to erase entire list.
 
 
 ![Mobile view](assets/images/readme/mobile.png)
@@ -94,8 +94,6 @@ In order for someone to access, I must deploy site to Github from Gitpod the con
   - In the left sidebar, click Pages.
   - Under “GitHub Pages”, use the None or Branch drop-down menu and select a publishing source.
   - Optionally, use the drop-down menu to select a folder for my publishing source. 
-
-The live link can be found here - https://nedduc.github.io/Memo-It/
 
 ## Credits 
 (https://www.w3schools.com/)(https://www.youtube.com/channel/UC8n8ftV94ZU_DJLOLtrpORA)
