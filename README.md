@@ -95,6 +95,8 @@ In order for someone to access, I must deploy site to Github from Gitpod the con
   - Under “GitHub Pages”, use the None or Branch drop-down menu and select a publishing source.
   - Optionally, use the drop-down menu to select a folder for my publishing source. 
 
+The live link can be found here - https://nedduc.github.io/Memo-It/
+
 ## Credits 
 (https://www.w3schools.com/)(https://www.youtube.com/channel/UC8n8ftV94ZU_DJLOLtrpORA)
 (https://fontawesome.com/)(Patient and kind tutors from Code Institute)
